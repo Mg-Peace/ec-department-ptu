@@ -1,0 +1,1968 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+body {
+    background-color: #f7f9fc;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #ff6600;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 60px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #0055a5;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #003f7d;
+}
+
+nav a.active {
+    background-color: #ff6600;
+    color: white;
+}
+
+/* Section styling */
+main {
+    padding: 30px 20px;
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer styles */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #ff6600;
+}
+
+footer h3 {
+    color: #ffcc00; /* Bright yellow for headings */
+}
+
+footer p {
+    color: #f1f1f1; /* Light gray for text */
+}
+
+/* Google Map image */
+.map-image {
+    margin-top: 15px;
+    border: 2px solid white;
+    border-radius: 8px;
+    width: 300px;
+}
+
+/* Reuse for gallery (projects + events) */
+.project-gallery,
+.event-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item,
+.event-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    max-width: 300px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover,
+.event-item:hover {
+    transform: scale(1.02);
+}
+
+.project-item img,
+.event-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.project-item h3,
+.event-item h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.project-item p,
+.event-item p {
+    font-size: 14px;
+    color: #555;
+}
+.site-title {
+    color: #ffffff; /* or any color you like */
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo {
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+/* Navbar layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004080; /* Dark blue background */
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  color: white;
+}
+
+/* Logo and title */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.site-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: #0066cc; /* Lighter blue on hover/active */
+}
+p {
+  text-align: justify;
+}
+footer {
+  background-color: #004080;
+  color: white;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+.footer-section p {
+  margin: 5px 0;
+  color: #f0f0f0;
+}
+
+.map-image {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+footer {
+  background-color: #004080;
+  color: white;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  color: #f0f0f0;
+}
+
+.map-image {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+/* 🔽 Responsive layout for phones and tablets */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .map-image {
+    max-width: 100%;
+  }
+}
+.dept-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.ec-logo {
+  height: 60px; /* You can adjust this */
+  width: auto;
+}
+
+.dept-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #004720; /* Dark navy blue for visibility */
+}
+.dept-heading {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.ec-logo {
+  height: 70px;
+  width: auto;
+}
+
+.dept-text h1 {
+  font-size: 30px;
+  margin: 0;
+  color: #002147;
+}
+
+.dept-text p {
+  font-size: 16px;
+  color: #444;
+  margin-top: 5px;
+}
+
+/* 🔽 Mobile Responsive */
+@media (max-width: 600px) {
+  .dept-heading {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ec-logo {
+    height: 60px;
+  }
+}
+p {
+  margin-bottom: 15px;
+  text-indent: 3em; /* <-- Indentation at paragraph start */
+}
+h1, h2, h3 {
+  color: #003366;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* soft shadow */
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4); /* bolder shadow */
+}
+
+h2 {
+  font-size: 1.6rem;
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  color: white;
+  text-shadow: 0 0 4px #003366, 0 0 6px #003366;
+}
+/* All headings with outline (except specific h1 on About Page) */
+h1:not(.no-outline), h2, h3 {
+  color: #003366;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
+}
+
+h1:not(.no-outline) {
+  font-size: 2rem;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+.no-outline {
+  text-shadow: none !important;
+  color: #003366;
+}
+.faculty-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.faculty-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.faculty-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.lab-section {
+  margin-bottom: 40px;
+}
+
+.lab-section h3 {
+  color: #003366;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.lab-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.lab-gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.lab-gallery img:hover {
+  transform: scale(1.05);
+}
+.lab-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.lab-gallery img {
+  width: 220px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+.lab-gallery img:hover {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 600px) {
+  .lab-gallery img {
+    width: 100%;
+  }
+}
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.5;
+  text-align: justify;
+}
+ul {
+  list-style: none;
+  padding-left: 20px;
+  text-align: justify;
+}
+
+ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+}
+
+ul li::before {
+  content: "➤"; 
+  position: absolute;
+  left: 0;
+  color: #006699;
+  font-size: 14px;
+}
+.event-section {
+  margin-bottom: 40px;
+}
+
+.event-section h3 {
+  color: #004080;
+ 
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.event-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.event-gallery img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.event-gallery img:hover {
+  transform: scale(1.05);
+}
+.event-intro {
+  background-color: #fdfdfd;
+  padding: 25px 30px;
+  margin: 30px 0;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #444;
+  text-align: justify;
+  line-height: 1.8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+ 
+}
+.event-intro {
+  background-color: #fdfdfd;
+  padding: 25px 30px;
+  margin: 30px 0;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #444;
+  text-align: justify;
+  line-height: 1.8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+}
+.event-intro {
+  background-color: #fdfdfd;
+  padding: 25px 30px;
+  margin: 30px 0;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #444;
+  text-align: justify;
+  line-height: 1.8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.event-section h3 {
+  color: #004080;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+.event-section h3 {
+  color: #004080;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+.pdf-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.pdf-item {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #006699;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #004d66;
+}
+.pdf-item p {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #222;
+}
+.pdf-item p {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #222;
+  text-align: center;
+}
+.pdf-item p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #222;
+  line-height: 1.4;
+}
+.pdf-item {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* 💡 horizontal center */
+  text-align: start;   /* 💡 wrap text center */
+  min-height: 140px;    /* 💡 enough space for vertical alignment */
+}
+.download-btn {
+  margin-top: 10px;
+}
+.pdf-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.pdf-item {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  width: 100%;
+  max-width: 300px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.pdf-item:hover {
+  transform: translateY(-5px);
+}
+
+.pdf-item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+  padding: 0 10px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #006699;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+.download-btn:hover {
+  background-color: #004d66;
+}
+.memories-description {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #333;
+  background-color: #f9fbff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.memories-description p {
+  margin-bottom: 1.2rem;
+}
+footer .copyright {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #002244;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+.lab-section {
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.lab-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #003366;
+  text-align: center;
+}
+
+.lab-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.lab-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lab-gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.lab-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #003366;
+  text-align: center;
+  border-bottom: none; /* ဒီလိုနဲ့ မျဉ်းကြောင်းဖျောက် */
+}
+.event-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.event-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.event-gallery img:hover {
+  transform: scale(1.03);
+}
+header {
+  position: sticky; /* OR use 'fixed' for always fixed */
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* optional: nice shadow when sticky */
+}
+/* Remove မူလ footer styles ရဲ့ conflict တွေဖြစ်စေတဲ့ အပိုင်းတွေကိုဖယ်ရှားပေးပါ */
+
+footer {
+  background-color: #004080 !important;
+  color: white !important;
+  padding: 30px 20px !important;
+  margin-top: 60px !important;
+  text-align: left !important;
+}
+
+.footer-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+  gap: 30px !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+
+.footer-section {
+  flex: 1 !important;
+  min-width: 250px !important;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px !important;
+  font-size: 18px !important;
+  border-bottom: 1px solid white !important;
+  padding-bottom: 5px !important;
+  color: #ffcc00 !important;
+}
+
+.footer-section p {
+  margin: 5px 0 !important;
+  color: #f0f0f0 !important;
+  line-height: 1.5 !important;
+}
+
+.map-image {
+  width: 100% !important;
+  max-width: 300px !important;
+  margin-top: 10px !important;
+  border-radius: 8px !important;
+  border: 2px solid white !important;
+}
+
+footer .copyright {
+  text-align: center !important;
+  padding: 10px 0 !important;
+  background-color: #002244 !important;
+  color: #ffffff !important;
+  font-size: 0.9rem !important;
+  margin-top: 40px !important;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .footer-section {
+    width: 100% !important;
+  }
+
+  .map-image {
+    max-width: 100% !important;
+  }
+}
+.event-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px; /* ပုံတွေကြားအကွာအဝေး */
+  justify-content: flex-start;
+}
+
+.event-gallery img {
+  width: 130px; /* ပုံတိုင်းအနည်းငယ်သေးသေး */
+  margin: 0; /* gap နဲ့ handle */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.event-gallery img:hover {
+  transform: scale(1.05);
+}
+.event-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* တစ်ရပ်မှာ ပုံ ၄ ပုံ */
+  gap: 5px; /* ပုံတွေကြား အကွာအဝေး */
+  justify-items: center; /* ပုံတိုင်းကို အလယ်စွဲ */
+}
+
+.event-gallery img {
+  width: 100px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.event-gallery img:hover {
+  transform: scale(1.05);
+}
+/* Responsive: screen အတိုင်း ပြောင်းချင်ရင် */
+@media screen and (max-width: 900px) {
+  .event-gallery {
+    grid-template-columns: repeat(2, 1fr); /* ဖုန်းလေးတန်း */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .event-gallery {
+    grid-template-columns: 1fr; /* တစ်ပုံတည်း အလယ် */
+  }
+}
+.event-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* row တစ်ခုလျှင် ပုံ ၄ ပုံ */
+  gap: 20px;
+  justify-items: center;
+}
+
+.event-gallery img {
+  width: 300px; /* ပိုကြီးပြောင်းပေးတယ် */
+  height: 210px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.event-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 1200px) {
+  .event-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .event-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .event-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+.event-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.event-gallery img {
+  width: 320px;
+  height: 240px; /* 4:3 ratio */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.event-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 1200px) {
+  .event-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .event-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .event-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+.event-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.event-gallery img {
+  width: 225px;
+  height: 300px; /* 3:4 ratio */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.event-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 1200px) {
+  .event-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .event-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .event-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+.event-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.event-gallery img {
+  width: 300px;      /* wider */
+  height: 225px;     /* less tall => 4:3 landscape ratio */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.event-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 1200px) {
+  .event-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .event-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .event-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+.event-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.event-gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.event-gallery img:hover {
+  transform: scale(1.05);
+}
+.event-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.event-gallery img {
+  width: calc(25% - 20px); /* 4 per row with spacing */
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.event-gallery img:hover {
+  transform: scale(1.05);
+}
+.event-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 photos per row */
+  gap: 15px;
+  justify-items: center;
+}
+.event-gallery img {
+  width: 95%;  /* Slightly larger than original, but still inside grid */
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.event-gallery img:hover {
+  transform: scale(1.05);
+}
+.event-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-items: center;
+}
+
+.event-gallery img {
+  width: 230px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.event-gallery img:hover {
+  transform: scale(1.05);
+}
+.event-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-items: center;
+}
+
+.event-gallery img {
+  width: 230px;
+  height: 150px; /* Same as width for 1:1 ratio */
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.event-gallery img:hover {
+  transform: scale(1.05);
+}
+.navbar {
+  padding: 10px 20px;
+  background-color: #004080;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 60px;   အကယ်၍ height သတ်မှတ်ထားရင် အရမ်းနက်ရှိုင်းနေတတ် */
+  margin-bottom: 15px; /* navbar နောက်က အကွာအဝေး */
+}
+/* dept-heading class ရဲ့ အောက်ပိုင်း spacing ကြီးစေဖို့ */
+.dept-heading {
+  margin-top: 20px; /* ဒါမှမဟုတ် padding-top: 20px; */
+  display: flex;
+  align-items: center;
+  gap: 15px; /* logo နဲ့ စာသားကြား အကွာအဝေး */
+}
+
+/* EC logo ပုံအရွယ်အစား စနစ်တကျ ထားရန် */
+.ec-logo {
+  width: 100px; /* သင့် website ပေါ် မိုဘိုင်းတွင်လည်း သင့်တော်အောင် */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Department Name Text */
+.dept-text h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  /* နောက်ထပ် style သင့်လိုအပ်ချက်အရ ပြင်ဆင်နိုင် */
+}
+.custom-bullet {
+  list-style: none; /* မူလ bullet ဖျက် */
+  padding-left: 20px; /* bullet နေရာအတွက် padding */
+}
+
+.custom-bullet li {
+  position: relative;
+  padding-left: 25px; /* bullet icon နေရာ */
+  margin-bottom: 8px;
+  text-align: justify; /* စာကြောင်း justify */
+}
+
+.custom-bullet li::before {
+  content: "➤";  /* bullet အစား ထည့်မယ့် icon */
+  position: absolute;
+  left: 0;
+  color: #006699; /* bullet အရောင် */
+  font-size: 16px;
+  line-height: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.curriculum-image {
+  width: 100%; /* ပြင်ဆင်ချင်ရင် 100% အစား px သတ်မှတ်လို့ရသည် */
+  max-width: 800px; /* အများဆုံးအရွယ်အစား */
+  height: auto;
+  display: block;
+  margin: 10px 0 30px 0; /* ပုံအပေါ်၊ အောက် အကွာအဝေး */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.department-heads-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  gap: 30px;
+  padding: 0 10px;
+}
+
+.department-head {
+  width: 280px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: right;
+  transition: transform 0.3s ease;
+}
+
+.department-head img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #003366;
+}
+
+.department-head h3 {
+  font-size: 1.25rem;
+  color: #003366;
+  margin-bottom: 8px;
+}
+
+.department-head .position {
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.department-head .period {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.department-head:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+.department-heads-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 25px;
+  padding: 0 10px;
+}
+
+.department-head {
+  width: 260px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.department-head img {
+  width: 200px;
+  height: 200px;   /* စတုရန်းပုံ */
+  object-fit: cover;
+  border-radius: 12px;  /* စတုရန်းဘောင်အတွက် နူးညံ့သောကွင်း */
+  margin-bottom: 15px;
+  border: 3px solid #003366;
+}
+
+.department-head h3 {
+  font-size: 1.3rem;
+  color: #003366;
+  margin-bottom: 8px;
+}
+
+.department-head .position {
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.department-head .period {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.department-head:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+.ec-header {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.ec-logo {
+  width: 150px;      /* logo size */
+  height: auto;
+  display: block;
+  margin: 5 auto 15px;
+}
+
+.ec-title {
+  font-size: 2rem;
+  color: #003366;
+  font-weight: bold;
+}
+/* Events Page Images Hover Zoom Effect */
+.events-gallery img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.events-gallery img:hover {
+  transform: scale(1.2); /* ပုံ 20% ကြီးသွားမယ် */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+/* Popup Background */
+.image-popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Popup Image */
+.image-popup img {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  animation: zoomIn 0.3s ease-in-out;
+}
+
+/* Close Button */
+.image-popup .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+/* ပုံ gallery style မူလ */
+.event-gallery img {
+  width: 150px;
+  margin: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.event-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal backdrop */
+.modal {
+  display: none; /* ပုံဖျောက်ထား */
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8); /* နက်ရှိုင်းသော အနက် */
+}
+
+/* Modal content: image ကို center ပြထား */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #000;
+  animation-name: zoomIn;
+  animation-duration: 0.4s;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+  user-select: none;
+}
+.close-btn:hover {
+  color: #bbb;
+}
+
+/* Zoom animation */
+@keyframes zoomIn {
+  from {transform: scale(0.7);}
+  to {transform: scale(1);}
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(252, 249, 249, 0.6); /* black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+/* Dropdown Base */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #004080; /* Navbar color scheme */
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+  background-color: #0059b3;
+}
+
+/* Show dropdown when active */
+.dropdown.active .dropdown-content {
+  display: block;
+}
+/* Dropdown Base */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #004080; /* Navbar color scheme */
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+  background-color: #0059b3;
+}
+
+/* Show dropdown when active */
+.dropdown.active .dropdown-content {
+  display: block;
+}
+/* Navbar base */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navbar .site-title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li {
+  position: relative;
+}
+
+.navbar nav ul li a {
+  display: block;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.navbar nav ul li a:hover,
+.navbar nav ul li a.active {
+  background-color: #0055a5;
+  border-radius: 4px;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0055a5;
+  min-width: 200px;
+  z-index: 1000;
+  border-radius: 4px;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #003366;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: none;
+  }
+
+  .dropdown.active .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 210px; /* navbar height */
+}
+.nav-links li a {
+  position: relative;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #003366;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 4px; /* box height */
+  background-color: #ff6600; /* box color */
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%; /* box width on hover */
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* viewport height အကုန် */
+  margin: 0;
+}
+
+main {
+  flex: 1; /* footer ကို push down */
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  /* position: static; */
+}
+/* --- Page Layout --- */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content will take all remaining space */
+main {
+  flex: 1;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #222; /* dark background */
+  color: #fff;
+  padding: 20px 10%;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section img {
+  margin: 5px 0;
+  max-width: 100%;
+}
+
+.map-image {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Copyright */
+footer .copyright {
+  font-size: 0.9rem;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+}
+
+/* Optional: small devices adjustments */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section {
+    text-align: center;
+  }
+}
+main {
+  margin-top: 0;    /* အပေါ်အနားကြီးကို ဖျက် */
+  padding-top: 0;   /* အပေါ် padding ကို ဖျက် */
+}
+header {
+  margin-bottom: 0; /* header အောက် margin ဖျက် */
+  padding-bottom: 0; /* header အောက် padding ဖျက် */
+}
+.dropdown-content a {
+  white-space: nowrap;   /* စာကြောင်းမကြဲပဲ တစ်ကြောင်းထဲထားမယ် */
+}
+.dropdown-content a {
+  letter-spacing: normal;  /* default letter spacing သုံး */
+  word-spacing: normal;    /* စကားလုံးကြား spacing reset */
+}
+#announcements {
+  padding: 20px;
+}
+
+.announcement-category {
+  background: #f9f9f9;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #007acc;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.announcement-category h3 {
+  margin-bottom: 10px;
+  color: #007acc;
+}
+
+.announcement-category ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.announcement-category li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+.admissions-section {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.admissions-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.admission-box {
+  background: #ffffff;
+  border-left: 6px solid #007acc;; /* လိမ္မော်ရောင် highlight */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+
+.admission-box:hover {
+  transform: translateY(-5px);
+}
+
+.admission-box h3 {
+  margin-bottom: 12px;
+  color: #2225e6; /* လိမ္မော်ရောင် heading */
+}
+
+.admission-box ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.admission-box ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 30px auto 0 auto;
+  background-color: #f9f9f9;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #003366;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical; /* only textarea can be resized vertically */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007acc;
+  box-shadow: 0 0 8px rgba(0,122,204,0.2);
+  outline: none;
+}
+
+.contact-form button {
+  display: inline-block;
+  background-color: #007acc;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+  background-color: #005ea3;
+  transform: translateY(-2px);
+}
+
+/* Section Heading */
+#contact-us h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+#contact-us p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .contact-form {
+    padding: 25px 20px;
+  }
+}
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  overflow: auto;
+  padding-top: 60px;
+}
+
+.modal img.modal-image {
+  display: block;
+  max-width: 80%;
+  max-height: 60vh;
+  margin: 0 auto 20px auto;
+  border-radius: 8px;
+}
+
+.modal h3.modal-title,
+.modal p.modal-group,
+.modal p.modal-students {
+  color: #fff;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.modal .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
+/* Modal image size */
+.modal-content {
+  max-width: 90%;   /* စာမျက်နှာအကျယ်ရဲ့ 90% ထက် မကျယ်စေရန် */
+  max-height: 80vh; /* viewport height ရဲ့ 80% ထက် မကြီးစေရန် */
+  width: auto;      /* အကျယ်ကို အလိုအလျောက်ချိန်ညှိ */
+  height: auto;     /* အမြင့်ကို အလိုအလျောက်ချိန်ညှိ */
+  display: block;
+  margin: 0 auto;
+}

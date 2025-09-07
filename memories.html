@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Memories | Department of Electronic Engineering</title>
+  
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* Modal CSS */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 90%;
+      max-height: 80%;
+    }
+
+    .modal-caption {
+      text-align: center;
+      color: #fff;
+      padding: 10px 0;
+      font-size: 18px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .nav-prev, .nav-next {
+      position: absolute;
+      top: 50%;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      user-select: none;
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+      border: none;
+      border-radius: 5px;
+      transform: translateY(-50%);
+    }
+
+    .nav-prev { left: 20px; }
+    .nav-next { right: 20px; }
+  </style>
+</head>
+<body class="students-page">
+
+<!-- Header -->
+<header>
+  <div class="navbar">
+    <div class="logo-container">
+      <img src="images/ec-logo.png" alt="EC Logo" class="logo">
+      <span class="site-title">Department of Electronic Engineering (PTU)</span>
+    </div>
+
+    <div class="menu-toggle">&#9776;</div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="about.html" class="dropbtn">About</a>
+          <div class="dropdown-content">
+            <a href="about.html#history">History</a>
+            <a href="about.html#mission">Mission & Vision</a>
+            <a href="about.html#peos-ga">PEOs & GA</a>
+            <a href="about.html#department-heads">Former Head</a>
+            <a href="about.html#faculty-members">Faculty Members</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="academic.html" class="dropbtn">Academic</a>
+          <div class="dropdown-content">
+            <a href="academic.html#admissions">Admissions</a>
+            <a href="academic.html#subject-curriculum">Subject & Curriculum</a>
+            <a href="academic.html#student-statics">Student Statics</a>
+            <a href="academic.html#teaching-research-facilities">Teaching & Research Facilities</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="students.html" class="dropbtn">Students</a>
+          <div class="dropdown-content">
+            <a href="students.html#students-projects">Students' Projects</a>
+            <a href="students.html#thesis-books">Thesis Books</a>
+            <a href="students.html#announcements">Announcements</a>
+            <a href="students.html#contact-us">Contact Us</a>
+          </div>
+        </li>
+        <li><a href="memories.html">Memories</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2 data-aos="fade-right" data-aos-delay="100" style="margin-top: 30px;">Our Memories</h2>
+    <div class="event-intro" data-aos="fade-up" data-aos-delay="200" >
+      <section class="memories-description" style="margin-top: 0; padding-top: 5px;">
+        <p>In our Department of Electronic Engineering, memories are gently built through care, respect, and shared moments. Behind each lesson and every project, there is the quiet guidance of teachers and the eager spirit of students.</p>
+        <p>Our teachers do more than teach. They inspire, they support, and they walk beside us. Their patience and wisdom shape our growth, both as learners and as people. We, the students, respond not just with effort, but with trust, thankfulness, and deep respect.</p>
+        <p>The bond between teacher and student here is honest and warm. We help one another, listen to each other, and celebrate together. From traditional ceremonies to lively events, we create memories that carry meaning and joy.</p>
+        <p>Among us, there is kindness. In every shared laugh, in every thoughtful word, and in every quiet gesture — we feel the spirit of our department. These moments remind us that we belong, not just to a place of learning, but to a community that truly cares.</p>
+      </section>
+    </div>
+
+    <!-- GALLERY SECTIONS 1-12 -->
+    <div class="event-section" data-aos="fade-right" data-aos-delay="100">
+      <h3>အီလက်ထရောနစ်ဌာန ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ</h3>
+      <div class="event-gallery">
+        <img src="images/events-warso1.jpg" alt="ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-warso2.jpg" alt="ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-warso3.jpg" alt="ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-warso4.jpg" alt="ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-warso5.jpg" alt="ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-warso6.jpg" alt="ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-warso7.jpg" alt="ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-warso8.jpg" alt="ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-warso9.jpg" alt="ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-warso10.jpg" alt="ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-warso11.jpg" alt="ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-warso12.jpg" alt="ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-warso13.jpg" alt="ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-warso14.jpg" alt="ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-warso15.jpg" alt="ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-warso16.jpg" alt="ဝါဆိုသင်္ကန်းကပ် အမှတ်တရပုံရိပ်များ" />
+      </div>
+    </div>
+
+    <div class="event-section" data-aos="fade-right" data-aos-delay="150">
+      <h3>အီလက်ထရောနစ်ဌာန အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ</h3>
+      <div class="event-gallery">
+        <img src="images/events-payrespect1.jpg" alt="အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-payrespect2.jpg" alt="အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-payrespect3.jpg" alt="အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-payrespect4.jpg" alt="အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-payrespect5.jpg" alt="အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-payrespect6.jpg" alt="အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-payrespect7.jpg" alt="အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-payrespect8.jpg" alt="အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-payrespect9.jpg" alt="အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-payrespect10.jpg" alt="အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-payrespect11.jpg" alt="အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-payrespect12.jpg" alt="အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-payrespect13.jpg" alt="အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-payrespect14.jpg" alt="အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-payrespect15.jpg" alt="အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-payrespect16.jpg" alt="အာစရိယပူဇော်ပွဲ အမှတ်တရပုံရိပ်များ" />
+      </div>
+    </div>
+
+    <div class="event-section" data-aos="fade-right" data-aos-delay="200">
+      <h3>အီလက်ထရောနစ်ဌာန ပရဟိတလှုပ်ရှားမှု အမှတ်တရပုံရိပ်များ</h3>
+      <div class="event-gallery">
+        <img src="images/events-charity1.jpg" alt="ပရဟိတလှုပ်ရှားမှု အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-charity2.jpg" alt="ပရဟိတလှုပ်ရှားမှု အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-charity3.jpg" alt="ပရဟိတလှုပ်ရှားမှု အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-charity4.jpg" alt="ပရဟိတလှုပ်ရှားမှု အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-charity5.jpg" alt="ပရဟိတလှုပ်ရှားမှု အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-charity6.jpg" alt="ပရဟိတလှုပ်ရှားမှု အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-charity7.jpg" alt="ပရဟိတလှုပ်ရှားမှု အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-charity8.jpg" alt="ပရဟိတလှုပ်ရှားမှု အမှတ်တရပုံရိပ်များ" />
+      </div>
+    </div>
+
+    <div class="event-section" data-aos="fade-right" data-aos-delay="250">
+      <h3>အီလက်ထရောနစ်ဌာန စုပေါင်းဘုံကထိန်ပွဲ အမှတ်တရပုံရိပ်များ</h3>
+      <div class="event-gallery">
+        <img src="images/events-collective1.jpg" alt="စုပေါင်းဘုံကထိန်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-collective2.jpg" alt="စုပေါင်းဘုံကထိန်ပွဲ အမှတ်တရပုံရိပ်များ" />
+      </div>
+    </div>
+
+    <div class="event-section" data-aos="fade-right" data-aos-delay="300">
+      <h3>အီလက်ထရောနစ်ဌာန မောင်မယ်သစ်လွင်ကြိုဆိုပွဲ အမှတ်တရပုံရိပ်များ</h3>
+      <div class="event-gallery">
+        <img src="images/events-welcome1.jpg" alt="မောင်မယ်သစ်လွင်ကြိုဆိုပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-welcome2.jpg" alt="မောင်မယ်သစ်လွင်ကြိုဆိုပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-welcome3.jpg" alt="မောင်မယ်သစ်လွင်ကြိုဆိုပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-welcome4.jpg" alt="မောင်မယ်သစ်လွင်ကြိုဆိုပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-welcome5.jpg" alt="မောင်မယ်သစ်လွင်ကြိုဆိုပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-welcome6.jpg" alt="မောင်မယ်သစ်လွင်ကြိုဆိုပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-welcome7.jpg" alt="မောင်မယ်သစ်လွင်ကြိုဆိုပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-welcome8.jpg" alt="မောင်မယ်သစ်လွင်ကြိုဆိုပွဲ အမှတ်တရပုံရိပ်များ" />
+      </div>
+    </div>
+
+    <div class="event-section" data-aos="fade-right" data-aos-delay="350">
+      <h3>Project Show အမှတ်တရပုံရိပ်များ</h3>
+      <div class="event-gallery">
+        <img src="images/events-project1.jpg" alt="Project Show အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-project2.jpg" alt="Project Show အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-project3.jpg" alt="Project Show အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-project4.jpg" alt="Project Show အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-project5.jpg" alt="Project Show အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-project6.jpg" alt="Project Show အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-project7.jpg" alt="Project Show အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-project8.jpg" alt="Project Show အမှတ်တရပုံရိပ်များ" />
+      </div>
+    </div>
+
+    <div class="event-section" data-aos="fade-right" data-aos-delay="400">
+      <h3>မေဂျာပေါင်းစုံ ဘောလုံးအားကစားပြိုင်ပွဲပါဝင်မှု အမှတ်တရပုံရိပ်များ</h3>
+      <div class="event-gallery">
+        <img src="images/events-football1.jpg" alt="မေဂျာပေါင်းစုံ ဘောလုံးအားကစားပြိုင်ပွဲပါဝင်မှု" />
+        <img src="images/events-football2.jpg" alt="မေဂျာပေါင်းစုံ ဘောလုံးအားကစားပြိုင်ပွဲပါဝင်မှု" />
+        <img src="images/events-football3.jpg" alt="မေဂျာပေါင်းစုံ ဘောလုံးအားကစားပြိုင်ပွဲပါဝင်မှု" />
+        <img src="images/events-football4.jpg" alt="မေဂျာပေါင်းစုံ ဘောလုံးအားကစားပြိုင်ပွဲပါဝင်မှု" />
+        <img src="images/events-football5.jpg" alt="မေဂျာပေါင်းစုံ ဘောလုံးအားကစားပြိုင်ပွဲပါဝင်မှု" />
+        <img src="images/events-football6.jpg" alt="မေဂျာပေါင်းစုံ ဘောလုံးအားကစားပြိုင်ပွဲပါဝင်မှု" />
+        <img src="images/events-football7.jpg" alt="မေဂျာပေါင်းစုံ ဘောလုံးအားကစားပြိုင်ပွဲပါဝင်မှု" />
+        <img src="images/events-football8.jpg" alt="မေဂျာပေါင်းစုံ ဘောလုံးအားကစားပြိုင်ပွဲပါဝင်မှု" />
+        <img src="images/events-football9.jpg" alt="မေဂျာပေါင်းစုံ ဘောလုံးအားကစားပြိုင်ပွဲပါဝင်မှု" />
+        <img src="images/events-football10.jpg" alt="မေဂျာပေါင်းစုံ ဘောလုံးအားကစားပြိုင်ပွဲပါဝင်မှု" />
+        <img src="images/events-football11.jpg" alt="မေဂျာပေါင်းစုံ ဘောလုံးအားကစားပြိုင်ပွဲပါဝင်မှု" />
+        <img src="images/events-football12.jpg" alt="မေဂျာပေါင်းစုံ ဘောလုံးအားကစားပြိုင်ပွဲပါဝင်မှု" />
+      </div>
+    </div>
+
+    <div class="event-section" data-aos="fade-right" data-aos-delay="450">
+      <h3>လွတ်လပ်ရေးနေ့ အားကစားပြိုင်ပွဲပါဝင်မှု အမှတ်တရပုံရိပ်များ</h3>
+      <div class="event-gallery">
+        <img src="images/events-independence1.jpg" alt="လွတ်လပ်ရေးနေ့ အားကစားပြိုင်ပွဲပါဝင်မှု" />
+        <img src="images/events-independence2.jpg" alt="လွတ်လပ်ရေးနေ့ အားကစားပြိုင်ပွဲပါဝင်မှု" />
+        <img src="images/events-independence3.jpg" alt="လွတ်လပ်ရေးနေ့ အားကစားပြိုင်ပွဲပါဝင်မှု" />
+        <img src="images/events-independence4.jpg" alt="လွတ်လပ်ရေးနေ့ အားကစားပြိုင်ပွဲပါဝင်မှု" />
+      </div>
+    </div>
+
+    <div class="event-section" data-aos="fade-right" data-aos-delay="500">
+      <h3>အီလက်ထရောနစ်ဌာန ကျောင်းတွင်းသင်္ကြန် အမှတ်တရပုံရိပ်များ</h3>
+      <div class="event-gallery">
+        <img src="images/events-thingyan1.jpg" alt="ကျောင်းတွင်းသင်္ကြန် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-thingyan2.jpg" alt="ကျောင်းတွင်းသင်္ကြန် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-thingyan3.jpg" alt="ကျောင်းတွင်းသင်္ကြန် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-thingyan4.jpg" alt="ကျောင်းတွင်းသင်္ကြန် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-thingyan5.jpg" alt="ကျောင်းတွင်းသင်္ကြန် အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-thingyan6.jpg" alt="ကျောင်းတွင်းသင်္ကြန် အမှတ်တရပုံရိပ်များ" />
+      </div>
+    </div>
+
+    <div class="event-section" data-aos="fade-right" data-aos-delay="550">
+      <h3>ထမနှဲထိုးပြိုင်ပွဲ အမှတ်တရပုံရိပ်များ</h3>
+      <div class="event-gallery">
+        <img src="images/events-spoonrace1.jpg" alt="ထမနှဲထိုးပြိုင်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-spoonrace2.jpg" alt="ထမနှဲထိုးပြိုင်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-spoonrace3.jpg" alt="ထမနှဲထိုးပြိုင်ပွဲ အမှတ်တရပုံရိပ်များ" />
+        <img src="images/events-spoonrace4.jpg" alt="ထမနှဲထိုးပြိုင်ပွဲ အမှတ်တရပုံရိပ်များ" />
+      </div>
+    </div>
+
+    <div class="event-section" data-aos="fade-right" data-aos-delay="600">
+      <h3>Seminar ဖတ်ကြားမှု မှတ်တမ်းဓါတ်ပုံများ</h3>
+      <div class="event-gallery">
+        <img src="images/events-seminar1.jpg" alt="Seminar ဖတ်ကြားမှု မှတ်တမ်းဓါတ်ပုံများ" />
+        <img src="images/events-seminar2.jpg" alt="Seminar ဖတ်ကြားမှု မှတ်တမ်းဓါတ်ပုံများ" />
+        <img src="images/events-seminar3.jpg" alt="Seminar ဖတ်ကြားမှု မှတ်တမ်းဓါတ်ပုံများ" />
+        <img src="images/events-seminar4.jpg" alt="Seminar ဖတ်ကြားမှု မှတ်တမ်းဓါတ်ပုံများ" />
+      </div>
+    </div>
+
+    <div class="event-section" data-aos="fade-right" data-aos-delay="650">
+      <h3>လက်တွေ့ကွင်းဆင်းလေ့လာမှု မှတ်တမ်းဓါတ်ပုံများ</h3>
+      <div class="event-gallery">
+        <img src="images/events-fieldtrip1.jpg" alt="လက်တွေ့ကွင်းဆင်းလေ့လာမှု မှတ်တမ်းဓါတ်ပုံများ" />
+        <img src="images/events-fieldtrip2.jpg" alt="လက်တွေ့ကွင်းဆင်းလေ့လာမှု မှတ်တမ်းဓါတ်ပုံများ" />
+        <img src="images/events-fieldtrip3.jpg" alt="လက်တွေ့ကွင်းဆင်းလေ့လာမှု မှတ်တမ်းဓါတ်ပုံများ" />
+        <img src="images/events-fieldtrip4.jpg" alt="လက်တွေ့ကွင်းဆင်းလေ့လာမှု မှတ်တမ်းဓါတ်ပုံများ" />
+        <img src="images/events-fieldtrip5.jpg" alt="လက်တွေ့ကွင်းဆင်းလေ့လာမှု မှတ်တမ်းဓါတ်ပုံများ" />
+        <img src="images/events-fieldtrip6.jpg" alt="လက်တွေ့ကွင်းဆင်းလေ့လာမှု မှတ်တမ်းဓါတ်ပုံများ" />
+        <img src="images/events-fieldtrip7.jpg" alt="လက်တွေ့ကွင်းဆင်းလေ့လာမှု မှတ်တမ်းဓါတ်ပုံများ" />
+        <img src="images/events-fieldtrip8.jpg" alt="လက်တွေ့ကွင်းဆင်းလေ့လာမှု မှတ်တမ်းဓါတ်ပုံများ" />
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Modal -->
+  <div id="imgModal" class="modal">
+    <span class="close-btn" id="modalClose">&times;</span>
+    <img class="modal-content" id="modalImage" />
+    <div class="modal-caption" id="modalCaption"></div>
+    <button class="nav-prev">&#10094;</button>
+    <button class="nav-next">&#10095;</button>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer data-aos="fade-up" data-aos-delay="100">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Contact Info</h3>
+      <p>Phone: +959 254 031 895</p>
+      <p>Email: electronic.ptu@gmail.com</p>
+    </div>
+    <div class="footer-section">
+      <h3>Visit Us</h3>
+      <p>R8PJ+72, ပေါက်ခေါင်းလမ်း၊ ပေါင်းတမော့ ကျေးရွာအုပ်စု၊ ပြည်မြို့နယ်</p>
+      <img src="images/ptu-map.png" alt="PTU Location Map" class="map-image" />
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2025 Kaung Myat Htet | Department of Electronic Engineering, PTU. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 700, once: true });
+
+  // Modal JS
+  const galleryImages = document.querySelectorAll('.event-gallery img');
+  const modal = document.getElementById('imgModal');
+  const modalImg = document.getElementById('modalImage');
+  const caption = document.getElementById('modalCaption');
+  const closeBtn = document.getElementById('modalClose');
+  const prevBtn = document.querySelector('.nav-prev');
+  const nextBtn = document.querySelector('.nav-next');
+  let currentIndex = 0;
+
+  galleryImages.forEach((img, index) => {
+    img.addEventListener('click', () => {
+      currentIndex = index;
+      modal.style.display = 'block';
+      modalImg.src = img.src;
+      caption.innerText = img.alt;
+    });
+  });
+
+  closeBtn.onclick = () => modal.style.display = 'none';
+  prevBtn.onclick = () => navigate(-1);
+  nextBtn.onclick = () => navigate(1);
+
+  function navigate(direction) {
+    currentIndex += direction;
+    if(currentIndex < 0) currentIndex = galleryImages.length -1;
+    if(currentIndex >= galleryImages.length) currentIndex = 0;
+    modalImg.src = galleryImages[currentIndex].src;
+    caption.innerText = galleryImages[currentIndex].alt;
+  }
+
+  window.onclick = (e) => { if(e.target == modal) modal.style.display = 'none'; };
+
+  document.addEventListener('keydown', (e) => {
+    if(modal.style.display === 'block') {
+      if(e.key === 'ArrowLeft') navigate(-1);
+      if(e.key === 'ArrowRight') navigate(1);
+      if(e.key === 'Escape') modal.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
